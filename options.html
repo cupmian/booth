@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>Options</title>
+</head>
+<body>
+<form>
+  <div>
+    <div>
+      <span>支付方式</span>
+      <label>
+        <input type="radio" value="pixivpay_paypal" name="payment">
+        <span>Paypal</span>
+      </label>
+      <label>
+        <input type="radio" value="econtext" name="payment">
+        <span>银行便利店</span>
+      </label>
+    </div>
+    <div>
+      <span>邮寄方式</span>
+      <label>
+        <input type="radio" value="box" name="shipping">
+        <span>宅配便</span>
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>氏名</span>
+        <input maxlength="30" placeholder="山田太郎" size="30" type="text" value="" name="name">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>郵便番号</span>
+        <input placeholder="1500011" autocomplete="off" type="tel" value="" name="zip">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>都道府県</span>
+        <input value="" name="prefecture">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>市区町村・丁目・番地</span>
+        <input maxlength="22" placeholder="渋谷区千駄ヶ谷 1-2-3" autocomplete="off" size="22" type="text"
+               value="" name="address1">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>マンション・建物名・部屋番号</span>
+        <input maxlength="22" placeholder="" autocomplete="off" size="22" type="text" value=""
+               name="address2">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>電話番号</span>
+        <input placeholder="09012341234" type="tel" value="" name="phone">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>【銀行・コンビニ決済】お支払い名義</span>
+        <span>姓</span>
+        <input maxlength="30" placeholder="姓" size="30" type="text" value="" name="nameEc1">
+        <span>名</span>
+        <input maxlength="30" placeholder="名" size="30" type="text" value="" name="nameEc2">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>【銀行・コンビニ決済】電話番号</span>
+        <input placeholder="09012341234" type="tel" value="" name="phoneEc">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>重试次数</span>
+        <input type="number" value="" placeholder="100" name="retryCount" data-type="number">
+      </label>
+    </div>
+    <div>
+      <label>
+        <span>バースト・リンク</span>
+        <input type="number" value="" placeholder="5" step="0.01" name="burstTimeout" data-type="number">
+        <span>小时</span>
+      </label>
+    </div>
+    <div>
+      <span>模式</span>
+      <label>
+        <input type="radio" value="false" name="isDryRun" data-type="boolean">
+        <span>正常运行</span>
+      </label>
+      <label>
+        <input type="radio" value="true" name="isDryRun" data-type="boolean">
+        <span>测试执行（调试用）</span>
+      </label>
+    </div>
+  </div>
+  <div>
+    <button type="submit">保存</button>
+  </div>
+</form>
+</body>
+<script src="options.js"></script>
+</html>
